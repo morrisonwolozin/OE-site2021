@@ -1,0 +1,257 @@
+/****
+last edit: 10-26-2022, 11-28-2022 (fixed media query somewhat)
+the layout utilizes named grid areas  
+Bob Morrison
+****/
+
+body {
+	font-family: 'Roboto', sans-serif;
+	/*background-color: #e0e0e0;*/
+	background-color: #fff;
+	margin-left: 40px;
+}
+h1, h2 {
+
+    align-content: center;
+    padding: 10px;
+    background-color: #bcbcbc; 
+}
+h3 {
+    padding:0;
+    margin:2px;
+}
+
+
+/*  nav items */
+.container-nav {
+	background-color: #e0e0e0;
+	display: inline-flex;
+	justify-items: left;
+/*	grid-template-rows: 80px;
+	grid-template-columns: repeat(3,1fr);*/
+	/* margin-left: 80px; */
+	width: 100%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.nav-items {
+	text-transform: uppercase;
+	font-size: 20px;
+	padding-left: 40px;
+    padding-top:16px;
+}
+.logo {
+	max-width: 300px;
+	height: 50px;
+	/*margin-top: 15px;  bottom,top  left,right */
+	margin-left: 40px;
+	grid-column: 1 / span 7;
+}
+
+/* named grid areas */
+.page-nav {
+    grid-area: page-nav;
+    min-height: 150px;
+    background-color: white;
+    background-image: url('../../assets/img/hero1_06.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top:50px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.content {
+    grid-area: page-content;
+    background-color: #e0e0e0;
+    display:  flex;
+    flex-direction: column;
+    align-content: left;
+}
+.cards-1 { /* 11-28-22 make each card its own grid to allow media query to stack*/
+    grid-area: cards-1;
+    
+    background-color: #bcbcbc; 
+    padding: 6px;
+}
+
+.cards-2 {
+    grid-area: cards-2;
+
+    background-color: #bcbcbc; 
+    padding: 6px;
+}
+
+.page-footer {
+    grid-area: page-footer;
+    background-color: #e0e0e0;
+}
+
+/* top nav  */
+.page-nav a {
+    margin-top: 2rem;
+    padding-left: 1rem;
+   
+    color: blue;
+    background-color: white;
+}
+
+.page-nav h1 {
+    background-color: white;
+}
+
+/* 
+read more styles   
+*/
+.read-more-1 {
+    display: none;
+}
+.btn-read-more-1 {
+    padding: 5px 2px;
+    align-content: center;
+    align-items: center;
+
+    width: 120px;
+    background-color: rgb(161, 165, 172);
+    color: black;
+    border: none;
+    outline: none;
+    font-size: 1.0rem;
+    cursor: pointer;
+}
+.article-loads.show-more-1 .read-more-1 {
+    display: inline;
+}
+
+.read-more-2 {
+    display: none;
+}
+.btn-read-more-2 {
+    padding: 5px 5px;
+    width: 120px;
+    background-color: rgb(161, 165, 172);
+    color: black;
+    border: none;
+    outline: none;
+    font-size: 1.0rem;
+    cursor: pointer;
+}
+.article-equipment.show-more-2 .read-more-2 {
+    display: inline;
+}
+
+.read-more-3 {
+    display: none;
+}
+.btn-read-more-3 {
+    padding: 5px 5px;
+    width: 120px;
+    background-color: rgb(161, 165, 172);
+    color: black;
+    border: none;
+    outline: none;
+    font-size: 1.0rem;
+    cursor: pointer;
+}
+.article-operation.show-more-3 .read-more-3 {
+    display: inline;
+}
+
+.read-more-4 {
+    display: none;
+}
+.btn-read-more-4 {
+    padding: 5px 5px;
+    width: 120px;
+    background-color: rgb(161, 165, 172);
+    color: black;
+    border: none;
+    outline: none;
+    font-size: 1.0rem;
+    cursor: pointer;
+}
+.article-design-takeaway.show-more-4 .read-more-4 {
+    display: inline;
+}
+
+/*end read more styles*/
+
+/* a card   */
+.card {
+	background-color: #e0e0e0;
+	 text-align: center;
+     padding-top:6px;
+     padding-bottom: 6px;
+     border-top: 5px solid #bcbcbc;
+     vertical-align: top;
+}
+
+.hp-images {
+    display: inline-flex;
+   align-items:center;
+   align-content: space-between;
+
+}
+
+
+article {
+    text-align: center;
+}
+
+.page-content {
+    text-align: center;
+}
+
+.card img {
+	max-width: 320px; /* images:  300x250; */
+	height: auto;
+    padding-left: 8px;
+}
+
+.card .description {
+	text-align: center;
+}
+
+/* @media only screen and (min-width: 320px) and (max-width: 720px) {
+	.card p,h2,h3 {
+		font-size: 0.75rem;
+	}
+
+
+} */
+
+/* this is the default layout - for narrow screens */
+.container {
+    display:  grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+    grid-template-areas: 
+        "page-nav"
+        "cards-1"
+        "cards-2"        
+        "page-content"
+        "page-footer";
+    grid-gap: 10px;
+}
+
+
+/* this is the desktop view */
+@media (min-width: 600px) {
+    .container {
+      grid-template-columns: 2fr 3fr;
+      grid-template-areas:
+        "page-nav     page-nav"
+        "page-content cards-1"
+        "page-content cards-2"
+        "page-footer  page-footer";
+    }
+    .page-nav ul {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .page-nav h1 {
+        display:  flex;
+        justify-content: left;
+    }
+  }
