@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="english">
+
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <title>October Engineering Heat Pump Design and Installation</title>
+      <link rel="stylesheet" href="assets/css/normalize.css" media="screen" charset="utf-8">
+      <link rel="stylesheet" href="assets/css/hp-styles.css" media="screen" charset="utf-8">
+      <link href="assets/img/favicon.png" rel="icon">
+      <meta name="description" content="energy engineer heat-pump heat pump">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <body>
+
+      <div class="container-nav">
+        <img 
+          class="logo"
+          src="assets/img/logo6.png"
+          alt="October Engineering logo" 
+        >
+        <div class="nav-items"><a href="./index.html">Back</a></div>
+        <div class="nav-items"><a href="./index.html#about-me">About Me</a></div>
+        <div class="nav-items"><a href="./index.html#form-submitter">Contact Me</a></div>
+      </div>
+
+      <div class="container">
+
+        <nav class="page-nav">
+          <h1>Residential Heat Pump System Design and Installation</h1>
+        </nav>
+
+        <article class="content">
+          <h2>Heat Pump Systems for Cold Climate Heating (Opinionated)</h2>
+          <p>(in progress)</p>
+          <p>Cold climate, air-to-air source heat pump systems are a relatively recent choice of residential heating systems technology for northerly climates (colder than ASHRAE Zone 5). Their PROs: an electric technology which performs at least 50% better than electric resistance, provide air-conditioning, and is available in many equipment configurations. The systems are among the best choice of system for low load residences, i.e., residences with heating loads of less than or equal to 10 BTUh/SF. And, combined with solar PV generation systems, they’re a crucial component of "net-zero energy" design. Their CONs: They’re approximately twice as expensive as equivalent capacity fossil fuel systems, require more careful design, and, arguably, typically provide less comfort. While it’s a relatively simple design to add heat pumps to an existing residence as a supplement, the design choices are usually limited to locating indoor units on outside walls. It’s a difficult design and is typically cost-prohibitive to replace a residence's hydronic heating system with heat pump systems. In all cases, weatherization measures (air-sealing, insulation) should be completed in advance of heat pump system implementation. </p>
+
+          <h2>Residential Heat Pump System Design</h2>
+          <h3>Schematic Design</h3>
+          <p>The initial design step is to identify the Owner’s primary goal for the system: heating or cooling? Next, identify the spaces to be conditioned and their characteristics; then, an initial grouping of space areas into zones which will be served by the indoor unit. Preliminary locations for the indoor and outdoor equipment are identified.  A sketch of the of area is needed to organize this information. </p>
+<br>
+          <h3>Load Calculations</h3>
+          <p class="article-loads"> Heating and cooling loads are needed for equipment selection. The "load" refers to the statistically maximum heat loss (heating) and heat gain (cooling) rates that the building will experience, for which the HVAC equipment capacity must equal or exceed. The outside design conditions are not the statistical maximums. For heating, it's the outside air temperature that's lower than or equal to 97.1% of the hours in a statistical mean year. For cooling, it's the temperatures (coincident dry and wet bulb) that are greater than or equal to 1% of the hours in a statistical mean year. For example, the outside design heating temperature for Augusta, ME is 1 deg. F.; outside design temperatures for cooling are 84 and 69 deg. F.  A good estimate accurately compiles
+          <span class="read-more-1">
+           the known data, such as space areas, construction details and ventilation rate with reasonable estimates of unknown data, such the air leakage rate. This data are inputs on a space-by-space basis into a software model which calculates the loads. A spreadsheet model can be sufficient for heating; however, cooling loads are iterative due to the varying intensity and direction of solar load.
+          The most accurate loads are when all construction and operating data are known. For example, new construction with specified and implemented construction elements, ventilation rate and whose measured air leakage rate has been incorporated into the model. The least accurate is the other extreme, without knowns other than space areas.
+          Practically speaking, the HVAC subcontractor's attitude towards the results is likely the most important factor. The HVAC system is tasked with conditioning the building over the equipment lifetime. Typically, from the subcontractor's point of view, the system's performance is secondary to the minimizing the risk of a system that fails to meet its conditioning goals. For a thorough discussion see https://www.nrel.gov/docs/fy11osti/51603.pdf.  </span> </p> 
+          <button class="btn-read-more-1"><strong>...</strong> Read More</button>
+
+          <h3>Equipment Selection</h3>
+          <p class="article-equipment"> Selecting the equipment involves meeting or exceeding the loads with the system capacity based on the primary goal of heating or cooling. Heat pump capacity is ambient dependent and is rated at specific air temperatures; cold-climate rated equipment will provide full capacity at 5 deg. F outside air temperature. However, this nominal, rated, capacity should be adjusted based on the site’s outside design temperature and the length of its installed refrigerant line sets. Longer line sets derate capacity. Colder than rated design temperature derates heating capacity.  
+          Selecting the equipment involves <span class="read-more-2"> matching the system capacity to heating or cooling, which must exceed the conditioning loads. Heat pump capacity is ambient dependent and is rated at varying conditions; cold-climate rated equipment will provide full capacity at 5 deg. F outside air temperature. However, this nominal, rated, capacity should be adjusted based on the site’s outside design temperature and the length of its installed refrigerant line sets. Longer line sets derate capacity. Colder than nominal design temperature derates heating capacity. Mitsubishi's Diamond Designer software, or equivalent, should be utilized, because it includes the adjustments.
+          The manufacturer capacity certifying standard is AHRI 210/240 ahridirectory.org. NEEP.org maintains the most useful list (ashp.neep.org) and is the standard reference for utility rebate programs. It includes useful performance data that once was historically unavailable or obscured in manufacture literature, viz., the COP at various loads and outdoor air temperatures. For example, the Mitsubishi MXZ-3C24NAHZ2 (Cert ID: 201755016) heating COP at 5 deg. F is listed at 1.84 when operating at maximum output. 
+          Since the heat pump system is expected to heat and cool, typically either the heating and cooling load drives the selection. In Maine, the satisfying the heating load almost always means the cooling load is more than met and may be substantially exceeded. Usually, the load driving the selection falls between equipment capacity sizes; the next size larger will be selected. If the load model is accurate, equipment selection can be as closely matched as possible. Accurate load calculations are implied by Efficiency Maine’s recommendation (efficiencymainetraining.org) that equipment selection be based on the rated maximum capacity of the unit.   Also implied is that manufacturer ratings are reliable for the life of the unit and that back-up heat is available.  </span> </p>
+          <button class="btn-read-more-2"><strong>...</strong> Read More</button>
+
+          <h3>System Operation</h3>  
+          <p class="article-operation">Recent research and personal testing shows that cold-climate rated, multizone heat pump system heating operating performance fails to meet its published ratings, especially in low load buildings, those with a unit heating load of less than or equal to 10 BTUh/SF. 
+          Regarding the multi-zones, a more accurate description of this equipment is "multi-head, single zone units". The temperature tends to equalize amongst zones in these systems, regardless of individual zone temperature set-point. In these systems, regardless of indoor unit operation - on or off - refrigerant continues to flow through all zones. The rate of flow is unpublished, "a very low bleed rate", as described in <a href="./assets/img/hp-Mitsu-App-Note-20190110.pdf" target="_blank" rel="noreferrer noopener">Mitsubishi Application Note 1036</a>. In heating mode, spaces with low heat demand can overheat. In cooling mode, frost will form on the indoor coil 
+          when coil's dew point is lower than the space's. Moreover, <span class="read-more-3">the multi-zones have a minimum operating demand. If the heating load drops below the minimum turndown, energy is wasted. For all units in heating mode, frequent defrost cycles worsen performance and comfort. Others have documented performance considerably worse than expected (i.e., published) for sample buildings. For example, <a href="./assets/img/hp-air-source-heat-harley.pdf"  target="_blank" rel="noreferrer noopener">Bruce Harley Presentation at NESEA 2019</a>. Harley's sample residence indicated low heating COPs (e.g. 1.4) similar to what I've measured <a href="https://2000levelhillroad.com/heatpumpperformance.html" target="_blank" rel="noreferrer noopener">at my home </a>in Palermo, ME.  </span> </p>
+          <button class="btn-read-more-3"><strong>...</strong> Read More</button>
+
+          <h3>Design Take-aways</h3>  
+          <p class="article-design-takeaway">Energy efficient design implies <span class="read-more-4">that smaller capacity, preferably single-zone, units be first choices. However, locating outdoor units is difficult to begin with, and locating multiple outdoor units, more so.</span></p>
+          <button class="btn-read-more-4"><strong>...</strong> Read More</button>
+
+        </article>
+
+
+        <div class="cards-1">
+
+          <!-- <div class = "card" > -->
+            <h2>Current Heat Pump Systems - Design Only</h2>
+          <!-- </div> card -->
+
+          <div class = "card" >
+            <div class = "description">
+              <h4>Central Heat Pump Systems - Falmouth, ME</h4>
+              <p>Two central cold climate heat pump systems and energy recovery ventilation for a high performance residence designed by <a href="https://www.maines.design" target="_blank" rel="noreferrer noopener">Michael Maines</a>. HVAC installation by <a href="https://www.haleysmetal.com" target="_blank" rel="noreferrer noopener">Haley's Metal</a>.</p>
+            </div> <!-- description -->
+
+            <div class = "hp-images" >
+            <a href="assets/img/b-d-H-1.jpg" target="_blank">
+              <img src="assets/img/b-d-H-1-icon.jpg" 
+              alt="b-d H-1" 
+              /> 
+            </a>
+
+            <a href="assets/img/b-d-H-2.jpg" target="_blank">
+              <img src="assets/img/b-d-H-2-icon.jpg"
+              alt="b-d H-2" 
+              /> 
+            </a>
+       
+            <a href="assets/img/b-d-H-3.jpg" target="_blank">
+              <img src="assets/img/b-d-H-3-icon.jpg" 
+              alt="b-d H-3" 
+              /> 
+            </a>
+
+            <a href="assets/img/b-d-H-4.jpg" target="_blank">
+              <img src="assets/img/b-d-H-4-icon.jpg" 
+              alt="b-d H-4" 
+              /> 
+            </a>
+           
+             </div> <!-- hp-images -->         
+            </div> <!-- card -->
+
+
+          <div class = "card" >
+            <div class = "description">
+              <h4>Central Heat Pump Systems - Gouldsboro, ME</h4>
+              <p>Two central cold climate heat pump systems for a high performance residence designed by <a href="https://www.maines.design///www.maines.design/">Michael Maines</a>. HVAC installation by <a href="https://www.facebook.com/ogdenhvac/">Ogden Mechanical</a>.</p>
+            </div> <!-- description -->
+
+            <div class = "hp-images" >
+            <a href="assets/img/hp-Grif-H1.jpg" target="_blank">
+              <img src="assets/img/hp-Grif-H1-icon.jpg" 
+              alt="Grif H-1" 
+              /> 
+            </a>
+
+           
+            <a href="assets/img/hp-Grif-H2.jpg" target="_blank">
+              <img src="assets/img/hp-Grif-H2-icon.jpg" 
+              alt="Grif H-2" 
+              /> 
+            </a>
+
+            
+            <a href="assets/img/hp-Grif-H3.jpg" target="_blank">
+              <img src="assets/img/hp-Grif-H3-icon.jpg" 
+              alt="Grif H-3" 
+              /> 
+            </a>
+
+            <a href="assets/img/hp-Grif-H4.jpg" target="_blank">
+              <img src="assets/img/hp-Grif-H4-icon.jpg" 
+              alt="Grif H-4" 
+              /> 
+            </a>
+           
+             </div> <!-- hp-images -->         
+            </div> <!-- card -->
+
+          <div class = "card" >
+            <div class = "description">
+              <h4>Single Zone Heat Pump Systems - Stow, ME</h4>
+              <p>Two single zone cold climate heat pump systems for a high performance residence. HVAC installation by Revision Energy LLC.</p>
+            </div> <!-- description -->
+
+            <div class = "hp-images" >
+            <a href="assets/img/hp-D-B-1-of-3.jpg" target="_blank">
+              <img src="assets/img/hp-D-B-1-of-3-icon.jpg" 
+              alt="D-B drawing H-1" 
+              /> 
+            </a>
+
+            <a href="assets/img/hp-D-B-2-of-3.jpg" target="_blank">
+              <img src="assets/img/hp-D-B-2-of-3-icon.jpg" 
+              alt="D-B drawing H-2" 
+              /> 
+            </a>
+
+            <a href="assets/img/hp-D-B-3-of-3.jpg" target="_blank">
+                <img src="assets/img/hp-D-B-3-of-3-icon.jpg" 
+              alt="D-B drawing H-3" 
+              /> 
+            </a>
+           
+             </div> <!-- hp-images -->         
+            </div> <!-- card -->
+          </div> <!-- cards-1 -->
+
+
+          <div class="cards-2">
+
+            <!-- <div class = "card" > -->
+              <h2>Recent Heat Pump Systems - Design and Implementation</h2>
+            <!-- </div> -->
+
+            <div class = "card" >
+              <div class = "description">
+                <h4>A single zone and a multizone, two systems - Belfast, ME</h4>
+                <p>A high performance renovation and electrification project: out with the oil-fired boiler, in with the cold climate heat pumps! Also, an energy recovery ventilator (ERV).</p>
+              </div> <!-- description -->
+   
+              <div class = "hp-images" >
+                <img class = "photo_main" src="assets/img/h-cox-img-1.jpg"/> 
+                <img class = "photo_main" src="assets/img/h-cox-img-2.jpg"/> 
+
+                <a href="assets/img/h-cox-H-1.jpg" target="_blank"> 
+                  <img src="assets/img/h-cox-H-1-icon.jpg" 
+                  alt="h-cox drawing H-1" 
+                  /> 
+                </a> 
+
+                <a href="assets/img/h-cox-H-2.jpg" target="_blank"> 
+                  <img src="assets/img/h-cox-H-2-icon.jpg" 
+                  alt="h-cox drawing H-2" 
+                  /> 
+                </a> 
+             </div> <!-- hp-images -->         
+            </div> <!-- card -->
+
+            <div class = "card" >
+              <div class = "description">
+                <h4>A single zone system for an office - Washington, ME</h4>
+                <p>Adding a heat pump zone for a radiant floor heated building adds flexibilty.</p>
+              </div> <!-- description -->
+   
+              <div class = "hp-images" >
+                <img class = "photo_main" src="assets/img/ho-care-img-1.jpg"/> 
+                <img class = "photo_main" src="assets/img/ho-care-img-2.jpg"/> 
+
+                <a href="assets/img/ho-care-H-1.jpg" target="_blank"> 
+                  <img src="assets/img/ho-care-H-1-icon.jpg" 
+                  alt="ho-care drawing H-1" 
+                  /> 
+                </a> 
+              
+             </div> <!-- hp-images -->         
+            </div> <!-- card -->
+
+            <div class = "card" >
+              <div class = "description">
+                <h4>Single Zone Heat Pump System - Palermo, ME</h4>
+                <p>A single zone system Mitsubishi MSZ-FS12NAH for a "tiny house"; Efficiency Maine's subsequent inspection report. </p>
+              </div> <!-- description -->
+   
+              <div class = "hp-images" >
+                <img class = "photo_main" src="assets/img/n-1.jpg"/> 
+
+                <a href="assets/img/ne-H-1.jpg" target="_blank"> 
+                  <img src="assets/img/ne-dwg-H-1-icon.jpg" 
+                  alt="N drawing H-1" 
+                  /> 
+                </a> 
+             <!--  <a href="assets/img/ne-H-2.jpg" target="_blank">
+                <img src="assets/img/ne-dwg-H-2-icon.jpg" 
+                alt="N drawing H-2" 
+                /> -->
+
+                <a href="assets/img/ne-Inspection-1.jpg" target="_blank">
+                  <img src="assets/img/ne-Inspection-1-icon.jpg" 
+                  alt="ne inspection 1" 
+                 />
+                <a href="assets/img/ne-Inspection-2.jpg" target="_blank">
+                  <img src="assets/img/ne-Inspection-2-icon.jpg" 
+                  alt="ne inspection 1" 
+                 />
+                <a href="assets/img/ne-Inspection-3.jpg" target="_blank">
+                  <img src="assets/img/ne-Inspection-3-icon.jpg" 
+                  alt="ne inspection 1" 
+                 />
+                <a href="assets/img/ne-Inspection-4.jpg" target="_blank">
+                  <img src="assets/img/ne-Inspection-4-icon.jpg" 
+                  alt="ne inspection 1" 
+                 />
+                 <a href="assets/img/ne-Inspection-5.jpg" target="_blank">
+                  <img src="assets/img/ne-Inspection-5-icon.jpg" 
+                  alt="ne inspection 1" 
+                 />
+
+              </a> 
+
+             </div> <!-- hp-images -->         
+            </div> <!-- card -->
+
+            <div class = "card">
+              <div class = "description">
+                <h4>Multizone and Single Heat Pump Systems - Lincolnville, ME</h4>
+                <p>A pair of Mitsubishi heat pump systems for a residence and accessory dwelling unit: a multizone outdoor unit Mitsubishi MXZ-3C30NAH serving a indoor high wall and a ceiling cassette unit for the residence, and a FS09NAH with a high wall indoor unit for the ADU. 
+                </p>
+              </div> <!-- description -->
+  
+              <!-- <img class = "photo_main" src="assets/img/hp-Sonia-H1-dwg.jpg"/> 
+              <img class = "photo_main" src="assets/img/hp-Sonia-H2-dwg.jpg"/> -->
+   
+              <div class = "hp-images" >
+                <img class = "photo_main" src="assets/img/s-cassette-1.jpg"/> 
+                <img class = "photo_main" src="assets/img/s-3C30.jpg"/>
+
+                <a href="assets/img/hp-s-H2-dwg.jpg" target="_blank">
+                  <img src="assets/img/hp-s-H2-dwg-icon.jpg" 
+                  alt="S drawing H-2" 
+                  /> 
+              </a> 
+
+             </div> <!-- hp-images -->         
+            </div> <!-- card -->
+
+            <div class = "card">
+              <div class = "description">
+                <h4>Single Zone Heat Pump System - Wayland, MA</h4>
+            
+                <p>A single zone Mitsubishi heat pump system, MUFZ-KJ18NAHZ, including a "low wall" indoor unit provides primary zone supplemental heating and cooling. 
+                </p>
+              </div> <!-- description -->
+              <div class = "hp-images" >
+                  <img class = "photo_main" src="assets/img/hp-R-K-odu.jpg" />
+                  <img class = "photo_main" src="assets/img/hp-R-K-idu.jpg" />
+                  <a href="assets/img/hp-R-K-dwg.jpg" target="_blank">
+                    <img src="assets/img/hp-R-K-dwg-icon.jpg" 
+                    alt="R-K-dwg" /> 
+                  </a>
+              </div> <!-- hp-images -->
+            </div> <!-- card -->     
+
+            <div class = "card">
+              <div class = "description">
+                <h4>Multizone Zone Heat Pump System - Spruce Head, ME</h4>
+               
+                <p>Three zone Mitsubishi heat pump system with two indoor units and valves for a future third unit; outdoor unit, MXZ-3C30NAHZ, two indoor units, MSZ-FS09NAHZ.
+                </p>
+              </div> <!-- description -->
+                <div class = "hp-images" >  
+                  <img class = "photo_main" src="assets/img/hp-brawn-0.jpg" />
+                  <img class = "photo_main" src="assets/img/hp-brawn-2.jpg" />
+                  <a href="assets/img/hp-brawn-dwg.jpg" target="_blank">
+                    <img src="assets/img/hp-brawn-dwg-icon.jpg" 
+                    alt="brawn-dwg" /> 
+                  </a>
+                </div> <!-- hp-images -->
+            </div> <!-- card --> 
+
+            <div class = "card">
+              <div class = "description">
+                <h4>Single Zone Heat Pump Systems - Northport, ME</h4>
+               
+                <p>Single zone Mitsubishi heat pump systems, MUZ-FH12NAHZ and MUZ-FH06NAHZ, for a net-zero class residence.
+                </p>
+              </div> <!-- description -->
+               <div class = "hp-images" >  
+                  <img class = "photo_main" src="assets/img/hp-Wise-odus-1.jpg" />
+                  <img class = "photo_main" src="assets/img/hp-Wise-odus-2.jpg" />
+                  <a href="assets/img/hp-Wise-dwg.jpg" target="_blank">
+                    <img src="assets/img/hp-Wise-dwg-icon.jpg" 
+                    alt="R-K-dwg" /> 
+                  </a>
+            </div> <!-- hp-images -->
+          </div> <!-- card -->
+
+          <div class = "card">
+            <div class = "description">
+              <h4>Multizone Heat Pump Systems - Palermo, ME</h4>
+              <p>A pair of multizone Mitsubishi heat pump systems heat and cool a building of two apartments, a Mitsubishi MXZ-5C42NAH and a MXZ-3C24NAH with indoor "high wall" units. <a href="https://www.2000levelhillroad.com">More detail about these systems</a>. 2022:the lower level apartment's two units were removed from the 5C42 and single zone units were installed to improve operating efficiency.
+              </p>
+            </div> <!-- description -->
+             <div class = "hp-images" >
+                <img class = "photo_main" src="assets/img/hp-2000-LHR-1.jpg"/> 
+                <img class = "photo_main" src="assets/img/hp-2000-LHR-2.jpg"/>
+
+                <a href="assets/img/hp-2000-LHR-dwg.jpg" target="_blank">
+                    <img src="assets/img/hp-2000-LHR-dwg-icon.jpg" 
+                    alt="2000 drawing H-4" 
+                    /> 
+                </a> 
+             </div> <!-- hp-images -->
+          </div> <!-- card -->
+
+
+
+        </div> <!-- cards-2 -->
+
+
+        
+        <footer class="page-footer" id="about-me">
+          <!-- 		<ul start="50">
+              <li><a href=#>About Me</a></li>
+              <li><a href=#>Contact</a></li>
+              <li><a href="">GitHub</a></li> 
+            </ul> -->
+      
+            <div class="footer_copyright">
+              <br>
+              <p><strong>&copyRobert L. Morrison 2022</strong></p>
+              <br>
+            </div>
+      
+          </footer>
+      </div> <!-- container -->
+
+      <script src="./assets/js/heatpumps.js" charset="utf-8"></script>
+    </body>
+</html>
