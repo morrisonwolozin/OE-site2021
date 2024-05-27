@@ -22,6 +22,35 @@ body {
 	margin-left: 40px;
 }
 
+.hero {
+	background-image: url("../img/hero1_06.jpg"); /* prev hero1_18 */
+	width: 100%; 
+	height: 25rem;
+
+	background-repeat: no-repeat;
+	background-size:cover;
+	margin-top: 9rem;
+
+/*	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;*/
+}
+
+.hero-info {
+	/*display: flex;*/
+  background-color: #fff;
+  font-size: 2.5rem;
+}
+
+.nav-items {
+	display: flex;
+	
+}
+#hero-name {
+	font-size: 2.5rem;
+	margin: 0rem 2rem;
+}
+
 h1, h2 {
 	padding-top: 0px;
 }
@@ -34,21 +63,25 @@ h3 {
 
 .container-nav {
 	background-color: #e0e0e0;
-	display: inline-flex;
+	display: flex;
 	justify-items: left;
 /*	grid-template-rows: 80px;
 	grid-template-columns: repeat(3,1fr);*/
 	/* margin-left: 80px; */
 	width: 100%;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding: 2.5rem 2rem;
+	position: fixed;
+	top: 0;
+
 }
 
 .nav-items {
 	text-transform: uppercase;
-	font-size: 20px;
-	padding-top:16px;
-	padding-left: 40px;
+	font-size: 1.75rem;
+	justify-items: right;
+	padding-left: 3rem;
+	align-items: center;
+	
 }
 
 .logo {
@@ -89,36 +122,10 @@ ul {
 }
 
 
-.hero {
-	background-image: url("../img/hero1_06.jpg"); /* prev hero1_18 */
-	width: 100%; 
-	height: 410px;
-
-	background-repeat: no-repeat;
-	background-size:cover;
-
-/*	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;*/
-}
-
-.hero-info {
-	/*display: flex;*/
-  background-color: #fff;
-  font-size: 38px;
-  max-width: 400px;
-}
 
 
 
-#hero-name {
-	font-family: 'Roboto', sans-serif;
-	font-size: 50px;
-	margin-top: 40px;
-	background-color: #fff;
-	max-width: 600px;
 
-}
 
 a {
 	text-decoration: none;
@@ -201,6 +208,7 @@ a:active {
 
 /* this is the default small screen */
 .wrapper {
+	margin-top: 2rem;
 	display:grid;
 	grid-template-areas:
 	"services"
@@ -210,7 +218,7 @@ a:active {
 	"experiences"
 	"mission"
 	"contact";
-	grid-gap: 16px;
+	grid-gap: 0.5rem;
 	/* margin-left: 20px; */
 }
 
